@@ -1,4 +1,6 @@
-# Introduction to Git and GitHub - Week 1
+# Introduction to Git and GitHub - Week 4
+
+[Back to home](README.md)
 
 ## Pull Requests
 
@@ -23,7 +25,7 @@
 7. Create a Pull Request (click the _Pull request_ link);
 8. Click _Create pull request_ button.
 
-**Obs.:** if after step 7 GitHub notifies us that it's not able to merge the changes automatically, it'll be necessary to rebase the changes before creating a Pull Request.
+**P.S.:** if after step 7 GitHub notifies us that it's not able to merge the changes automatically, it'll be necessary to rebase the changes before creating a Pull Request.
 
 After creating a pull request, it will appear a number next to the name of the pull request which is the identifier of the the pull request which is used in GitHub to track issues and pull requests. We can access this pull request by using that identifier number.
 
@@ -35,7 +37,7 @@ After creating a pull request, it will appear a number next to the name of the p
 
 ### Squashing Changes
 
-`git rebase -i [branch_name]`: passing the `-i` flag (which means we're calling the _interactive_ rebase) will open the editor showing all the selected commits, so we can decide what we want to do by using keyword in before each commit hash.
+`git rebase -i <branch_name>`: passing the `-i` flag (which means we're calling the _interactive_ rebase) will open the editor showing all the selected commits, so we can decide what we want to do by using keyword in before each commit hash.
 
 Some keywords are:
 
@@ -53,9 +55,9 @@ When rebasing for joining commits that is already in the remote branch, we'll ge
 
 Code reviews allow other people to look at the changes in the pull requests and suggest changes to that.
 
-### Basic sample workflow
+### Basic workflow (example)
 
-Supposing it's requested to improve a README in the pull request we can do the following:
+Supposing it's requested to improve a README in the pull request, we can do the following:
 
 1. Do any change requested in the local file;
 2. Commit the changes and again join in only one commit. To avoid redoing the _squashing_ process explained above, it's possible to execute `git commit -a --amend` which means we're adding the files to the stage area (`-a` flag) and creating a new commit and then rebasing interactively with the keyword **_fixup_**. With this the commit gets replaced by a completely new commit with a completely different commit ID;
@@ -64,5 +66,7 @@ Supposing it's requested to improve a README in the pull request we can do the f
 
 ### Issue tracker
 
-GitHub has its own issue tracker where we can create a new issue explaining about the issue that we've noticed and possible solutions. As the Pull Request, each issue has an exclusive hash tag.
-When solving a issue it's possible to write in the commit message a "code" to close the specified issue by its hash tag. To do that we just need to write `Closes #[ISSUE_ID]` and this will automatically close the issue. e.g. `Closes #2` will close the issue #2.
+GitHub has its own issue tracker where we can create a new issue explaining about the issue that we've noticed and possible solutions. As the Pull Requests, each issue has an exclusive hash tag.
+When solving a issue it's possible to write in the commit message a "code" to close the specified issue by its hash tag. To do that we just need to write `Closes #<issue_id>` and this will automatically close the issue. e.g. `Closes #2` will close the issue #2.
+
+[Back to home](README.md)

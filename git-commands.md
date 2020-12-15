@@ -3,7 +3,7 @@
 This file list some useful commands to interact with [Git](https://git-scm.com/).
 If you want to look at a more contextualized information about this commands, look at the **_week-n_** files, where are notes with a context.
 
-The commands are listed in a alphabetical order.
+[Back to home](README.md)
 
 ## Summary
 
@@ -64,9 +64,9 @@ The commands are listed in a alphabetical order.
 
 `git commit -m`: create a commit with the message passed directly in the command, e.g. `git commit -m "Sample message"`.
 
-`git commit -a`: commit without directly staging the files changes. This happen because it is a shortcut to stage any changes and commits them in one step. **But** this does **not** add any new files, so it only works with files that are already tracked.
+`git commit -a`: commit without directly staging the files. This happen because it is a shortcut to stage any changes and commits them in one step. **But** this does **not** add any new files, so it only works with files that are already tracked.
 
-`git commit --amend`: override the previous commit with the current staging area state. It can be called without any changing in staging area to edit commit message. **AVOID** amending commits that have already been made public (after pushing to the shared repository).
+`git commit --amend`: override the previous commit with the current state of the staging area. It can be called without any changing in staging area to edit commit message. **AVOID** amending commits that have already been made public (after pushing to the shared repository).
 
 [Back to start](#useful-git-commands)
 
@@ -76,28 +76,28 @@ The commands are listed in a alphabetical order.
 
 `git config --global user.email "email"`: set the global user email address.
 
-_These configurations shown above will be user with the commit messages for showing the **author** of the commit._
+**P.S.:**_These settings shown above will be user with the commit messages for showing the **author** of the commit._
 _Using the flag `--global` make it reflect to all the local repositories created. To configure only for the actual repo, we can just omit the flag._
 
-`git config --global credentials.helper cache`: cache our credentials, so once we pass them, we won't need to pass it again in the next commands which require it, but only by 15 minutes.
+`git config --global credentials.helper cache`: cache our credentials, so once we pass them, we won't need to pass again in the next commands which require it, but only by 15 minutes.
 
-`git config -l` shows all git configuration
+`git config -l` shows all git settings.
 
 [Back to start](#useful-git-commands)
 
 ## `git diff`
 
-`git diff <commit_id> <commit_id>`: show changes detailed in the files. It's the same as the `diff -u` command.
+`git diff <commit_id> <commit_id>`: show changes in detail in the files. It's the same as the `diff -u` command.
 
-`git diff --staged`: show the difference in the files which are already staged. It is an alias to `--cached` flag.
+`git diff --staged`: show the differences in the files which are already staged. It is an alias to `--cached` flag.
 
 [Back to start](#useful-git-commands)
 
 ## `git log`
 
-`git log`: show all commits in the repository with some info like, the author commit, the date and the whole message for the commit.
+`git log`: show all commits in the repository with some info like, the commit author, the date and the entire message for the commit.
 
-`git log -number`: _number_ represents the number of commit want to be shown. e.g. `git log -4`.
+`git log -number`: _number_ represents the number of commits we want to display. e.g. `git log -4`.
 
 `git log -p`: show the differences from the last commits. The **"p"** comes from the _patch_ witch represents the patch created.
 
@@ -107,7 +107,7 @@ _Using the flag `--global` make it reflect to all the local repositories created
 
 `git log --oneline`: show a simplified version of the log.
 
-_The last two commnads can be user together to a better visualization experience. e.g `git log --graph --oneline`_
+**P.S.:**_The last two commands can be used together to a better visualization experience. e.g `git log --graph --oneline`_
 
 `git log <remote_name/remote_branch>`: show the log for the given branch.
 
@@ -129,13 +129,13 @@ _The last two commnads can be user together to a better visualization experience
 
 `git push --delete <remote_name> <branch_name>`: delete a remote branch.
 
-`git push -f`: to force the push action.
+`git push -f`: force the push action.
 
 [Back to start](#useful-git-commands)
 
 ## `git rebase`
 
-`git rebase <branch_name>`: rebase a branch. This will move the current branch on top of the refactor branch.
+`git rebase <branch_name>`: rebase the given branch.
 
 `git rebase --continue`: after solving the merge conflicts, run this to continue the rebasing.
 
@@ -169,7 +169,7 @@ Create a commit that contains the inverse of all the changes made in the bad com
 
 `git revert HEAD`: revert the last commit.
 
-`git revert <commit_id>`: revert an specific commit by it **commit_id**. It's not necessary to pass the whole commit_id, but only the start of it (first 5 characters can be enough).
+`git revert <commit_id>`: reverses an specific commit by its **commit_id**. It's not necessary to pass the entire commit_id, but only the beginning (first 5 characters can be enough).
 
 [Back to start](#useful-git-commands)
 
@@ -185,7 +185,7 @@ Create a commit that contains the inverse of all the changes made in the bad com
 
 `git status`: show actual state of the repository by showing the untracked, added, modified and deleted files and if they are or not in the staging area.
 
-`git status -sb`: show the status in the short format (`-s` flag) and with the branch and tracking info (`-b` flag).
+`git status -sb`: show the status in the short format (`-s` flag) and with the branch and tracking infos (`-b` flag).
 
 [Back to start](#useful-git-commands)
 
@@ -193,7 +193,7 @@ Create a commit that contains the inverse of all the changes made in the bad com
 
 `git clone <repo_url>`: clone/download a repository by using the given **repo_url**.
 
-`git fetch`: sync the data by copying the commits done in the remote repository to the remote branches.
+`git fetch`: sync the data by copying the commits done in the remote repository.
 
 `git mv <old_name> <new_name>`: move/rename a file in the repository. Similar to Linux `mv` command.
 
@@ -202,3 +202,5 @@ Create a commit that contains the inverse of all the changes made in the bad com
 `git rm <file_name>`: delete/remove a file from the repository. Similar to Linux `rm` command.
 
 [Back to start](#useful-git-commands)
+
+[Back to home](README.md)
