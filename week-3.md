@@ -2,6 +2,12 @@
 
 [Back to home](README.md)
 
+## Summary
+
+- [GitHub basic interaction](#github-basic-interaction)
+- [Rebasing](#rebasing)
+- [Best practices for collaboration](#best-practices-for-collaboration)
+
 ## GitHub basic interaction
 
 `git clone <repo_url>`: clone/download a repository by using the given **repo_url**.
@@ -28,13 +34,11 @@
 
 `git remote update`: fetch the content of all remote branches and allow us to merge the contents ourselves.
 
-## Solving conflicts
-
-### Publishing remote branches
-
 `git push <remote_name> <branch_name>`: publish to a remote branch. e.g. `git push origin master`.
 
-### Rebasing
+[Back to start](#introduction-to-git-and-github-week-3)
+
+## Rebasing
 
 Rebasing means changing the base commit that's used for the branch. Rebasing the base where the commits split from the branch history, allows us to replay the new commits on top of the new base, allowing Git to do a fast forward merge, keeping the history linear.
 
@@ -58,7 +62,9 @@ Rebasing means changing the base commit that's used for the branch. Rebasing the
 - Run command to continue the rebasing (`git rebase --continue`);
 - Push the changes to the remote repository (`git push`);
 
-### Best practices for collaboration
+[Back to start](#introduction-to-git-and-github-week-3)
+
+## Best practices for collaboration
 
 - Always sync the branches before starting any work;
 - Avoid having very large changes that modify a lot of different things;
@@ -68,5 +74,7 @@ Rebasing means changing the base commit that's used for the branch. Rebasing the
 - When using these two branches, some bug fixes for the stable version may be done directly on the stable branch if they are no longer relevant to the latest version anymore;
 - Avoid rebasing changes that have been pushed to remote repositories;
 - Write good commit messages explaining the changes to provide the best context on why the changes were made;
+
+[Back to start](#introduction-to-git-and-github-week-3)
 
 [Back to home](README.md)
