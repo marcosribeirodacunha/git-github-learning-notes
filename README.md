@@ -46,3 +46,7 @@ Finally, you will see:
 
 If you want to see some useful commands to interact with Git, you can look at the [git-commands.md](git-commands.md) file, where you can find a list of some commands ordered alphabetically.
 The commands shown in the [course notes](#course-notes) are also included in that file.
+
+## Contributing
+
+Please, if you have any suggestion, found any mistake or anything else, **feel free to contribute** and send me a Pull Request.
