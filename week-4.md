@@ -1,6 +1,9 @@
-# Introduction to Git and GitHub - Week 4
+<h1 id="start">Introduction to Git and GitHub - Week 4</h1>
 
-[Back to home](README.md)
+<p align="center">
+  <a href="week-3.md">Previous week</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="README.md">Back to home</a>&nbsp;&nbsp;
+</p>
 
 ## Summary
 
@@ -21,7 +24,7 @@
 
 **Pull Request** is a commit or series of commits that you send to the owner of the repository so that they incorporate it into their tree.
 
-[Back to start](#introduction-to-git-and-github-week-4)
+[Back to start](#start)
 
 ### Basic workflow for collaborating
 
@@ -29,7 +32,7 @@
 2. Work on the local fork.
 3. Merge the changes back into the main repository by creating a Pull Request.
 
-[Back to start](#introduction-to-git-and-github-week-4)
+[Back to start](#start)
 
 ### Typical Pull Request workflow
 
@@ -42,11 +45,11 @@
 7. Create a Pull Request (click the _Pull request_ link);
 8. Click _Create pull request_ button.
 
-**P.S.:** if after step 7 GitHub notifies us that it's not able to merge the changes automatically, it'll be necessary to rebase the changes before creating a Pull Request.
+_**P.S.:** if after step 7 GitHub notifies us that it's not able to merge the changes automatically, it'll be necessary to rebase the changes before creating a Pull Request._
 
 After creating a pull request, it will appear a number next to the name of the pull request which is the identifier of the the pull request which is used in GitHub to track issues and pull requests. We can access this pull request by using that identifier number.
 
-[Back to start](#introduction-to-git-and-github-week-4)
+[Back to start](#start)
 
 ### Updating a Pull Request
 
@@ -54,7 +57,7 @@ After creating a pull request, it will appear a number next to the name of the p
 2. Push them back to the remote repository (remember to push them to the same branch as the created pull request);
 3. Git will automatically add the new commits to the Pull Request.
 
-[Back to start](#introduction-to-git-and-github-week-4)
+[Back to start](#start)
 
 ## Squashing Changes
 
@@ -62,17 +65,17 @@ After creating a pull request, it will appear a number next to the name of the p
 
 Some keywords are:
 
-`pick`: take the commits and rebase them against the branch we selected (_this is the **default** action_).
+`pick`: take the commits and rebase them against the branch we selected (_this is the **default** action_).  
 `reword`: reword a commit message keeping the changes as they are but modifying the commit messages.
 
 `squash` and `fixup`: merge the commits into the **previous** commit in the list.
 
-**When using** `squash` the commit messages are _added together_ and an editor opens up to let us make any necessary changes.
+**When using** `squash` the commit messages are _added together_ and an editor opens up to let us make any necessary changes.  
 **When using** `fixup` the commit message for that commit is _discarded_
 
 When rebasing for joining commits that is already in the remote branch, we'll get an error when try to push the new "rebased" commit. This happens because only the local branch will be rebased, so GitHub won't be able to Fast-forward the new commits in the repository. To force pushing once we know we're just squashing commits in one, we can run `git push -f` to force the push action.
 
-[Back to start](#introduction-to-git-and-github-week-4)
+[Back to start](#start)
 
 ## Code Reviews
 
@@ -87,13 +90,16 @@ Supposing it's requested to improve a README in the pull request, we can do the 
 3. Push the changes using the `-f` flag;
 4. On GitHub, looking at the Pull Request it's possible to notice the changes requested by code reviewers are marked with `outdated` flag, so we can now mark them as **resolved** by clicking on the button **_Resolve conversation_**.
 
-[Back to start](#introduction-to-git-and-github-week-4)
+[Back to start](#start)
 
 ## Issue tracker
 
 GitHub has its own issue tracker where we can create a new issue explaining about the issue that we've noticed and possible solutions. As the Pull Requests, each issue has an exclusive hash tag.
 When solving a issue it's possible to write in the commit message a "code" to close the specified issue by its hash tag. To do that we just need to write `Closes #<issue_id>` and this will automatically close the issue. e.g. `Closes #2` will close the issue #2.
 
-[Back to start](#introduction-to-git-and-github-week-4)
+[Back to start](#start)
 
-[Back to home](README.md)
+<p align="center">
+  <a href="week-3.md">Previous week</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="README.md">Back to home</a>&nbsp;&nbsp;
+</p>

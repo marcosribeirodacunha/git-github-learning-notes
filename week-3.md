@@ -1,6 +1,10 @@
-# Introduction to Git and GitHub - Week 3
+<h1 id="start">Introduction to Git and GitHub - Week 3</h1>
 
-[Back to home](README.md)
+<p align="center">
+  <a href="week-2.md">Previous week</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="README.md">Back to home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="week-4.md">Next week</a>
+</p>
 
 ## Summary
 
@@ -36,7 +40,7 @@
 
 `git push <remote_name> <branch_name>`: publish to a remote branch. e.g. `git push origin master`.
 
-[Back to start](#introduction-to-git-and-github-week-3)
+[Back to start](#start)
 
 ## Rebasing
 
@@ -62,7 +66,7 @@ Rebasing means changing the base commit that's used for the branch. Rebasing the
 - Run command to continue the rebasing (`git rebase --continue`);
 - Push the changes to the remote repository (`git push`);
 
-[Back to start](#introduction-to-git-and-github-week-3)
+[Back to start](#start)
 
 ## Best practices for collaboration
 
@@ -75,6 +79,10 @@ Rebasing means changing the base commit that's used for the branch. Rebasing the
 - Avoid rebasing changes that have been pushed to remote repositories;
 - Write good commit messages explaining the changes to provide the best context on why the changes were made;
 
-[Back to start](#introduction-to-git-and-github-week-3)
+[Back to start](#start)
 
-[Back to home](README.md)
+<p align="center">
+  <a href="week-2.md">Previous week</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="README.md">Back to home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="week-4.md">Next week</a>
+</p>

@@ -1,6 +1,10 @@
-# Introduction to Git and GitHub - Week 2
+<h1 id="start">Introduction to Git and GitHub - Week 2</h1>
 
-[Back to home](README.md)
+<p align="center">
+  <a href="week-1.md">Previous week</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="README.md">Back to home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="week-3.md">Next week</a>
+</p>
 
 ## Summary
 
@@ -26,7 +30,7 @@ In Git, HEAD represents the currently checked-out snapshot of the project.
 
 `git log --stat` show which files were changed and how many lines were added or removed in the commit.
 
-`git log -n`: _n_ represents the number of commits want to display.
+`git log -n`: _n_ represents the number of commits we want to display.
 
 ### `git show`
 
@@ -48,13 +52,13 @@ In Git, HEAD represents the currently checked-out snapshot of the project.
 
 `git mv <old_name> <new_name>`: move/rename a file in the repository. Similar to Linux `mv` command.
 
-[Back to start](#introduction-to-git-and-github-week-2)
+[Back to start](#start)
 
 ## `.gitignore` files
 
 .gitignore files are used to tell the git tool to intentionally ignore some files in a given Git repository. For example, this can be useful for configuration files or metadata files that a user may not want to check into the master branch.
 
-[Back to start](#introduction-to-git-and-github-week-2)
+[Back to start](#start)
 
 ## Undoing changes
 
@@ -78,7 +82,7 @@ Use to undo changes **after** staging (staged changes).
 
 `git commit --amend`: override the previous commit with the current state of the staging area. It can be called without any changing in staging area to edit commit message. **AVOID** amending commits that have already been made public (after pushing to the shared repository).
 
-[Back to start](#introduction-to-git-and-github-week-2)
+[Back to start](#start)
 
 ## Rollbacks
 
@@ -90,7 +94,7 @@ Create a commit that contains the inverse of all the changes made in the bad com
 
 `git revert <commit_id>`: reverses an specific commit by its **commit_id**. It's not necessary to pass the entire commit_id, but only the beginning (first 5 characters can be enough).
 
-[Back to start](#introduction-to-git-and-github-week-2)
+[Back to start](#start)
 
 ## Branching and Merging
 
@@ -125,6 +129,10 @@ When a conflict occurs git will alert us to solve the conflict. So, we can see w
 
 After committing the merge, we can use the `git log --graph --oneline` to see a graphical and simplified information about the merging.
 
-[Back to start](#introduction-to-git-and-github-week-2)
+[Back to start](#start)
 
-[Back to home](README.md)
+<p align="center">
+  <a href="week-1.md">Previous week</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="README.md">Back to home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="week-3.md">Next week</a>
+</p>

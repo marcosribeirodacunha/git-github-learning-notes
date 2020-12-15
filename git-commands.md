@@ -1,4 +1,4 @@
-# Useful Git commands
+<h1 id="start">Useful Git commands</h1>
 
 This file list some useful commands to interact with [Git](https://git-scm.com/).
 If you want to look at a more contextualized information about this commands, look at the **_week-n_** files, where are notes with a context.
@@ -30,7 +30,7 @@ If you want to look at a more contextualized information about this commands, lo
 
 `git add -p`: shows the difference in the files and ask if we want to stage the changes.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git branch`
 
@@ -44,7 +44,7 @@ If you want to look at a more contextualized information about this commands, lo
 
 `git branch -r`: show the remote branches that git are tracking.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git checkout`
 
@@ -56,7 +56,7 @@ If you want to look at a more contextualized information about this commands, lo
 
 `git checkout -b <branch_name>`: create a new branch with the specified name and switch to this branch.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git commit`
 
@@ -68,7 +68,7 @@ If you want to look at a more contextualized information about this commands, lo
 
 `git commit --amend`: override the previous commit with the current state of the staging area. It can be called without any changing in staging area to edit commit message. **AVOID** amending commits that have already been made public (after pushing to the shared repository).
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git config`
 
@@ -83,7 +83,7 @@ _Using the flag `--global` make it reflect to all the local repositories created
 
 `git config -l` shows all git settings.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git diff`
 
@@ -91,7 +91,7 @@ _Using the flag `--global` make it reflect to all the local repositories created
 
 `git diff --staged`: show the differences in the files which are already staged. It is an alias to `--cached` flag.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git log`
 
@@ -111,7 +111,7 @@ _Using the flag `--global` make it reflect to all the local repositories created
 
 `git log <remote_name/remote_branch>`: show the log for the given branch.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git merge`
 
@@ -119,7 +119,7 @@ _Using the flag `--global` make it reflect to all the local repositories created
 
 `git merge --abort`: If there are merge conflicts (meaning files are incompatible), _--abort_ can be used to abort the merge action.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git push`
 
@@ -131,7 +131,7 @@ _Using the flag `--global` make it reflect to all the local repositories created
 
 `git push -f`: force the push action.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git rebase`
 
@@ -141,7 +141,7 @@ _Using the flag `--global` make it reflect to all the local repositories created
 
 `git rebase -i <branch_name>`: executes a interactive rebase where we can select what we want to do with each commit.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git remote`
 
@@ -153,7 +153,7 @@ _Using the flag `--global` make it reflect to all the local repositories created
 
 `git remote update`: fetch the content of all remote branches and allow us to merge the contents ourselves.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git reset`
 
@@ -161,7 +161,7 @@ _Using the flag `--global` make it reflect to all the local repositories created
 
 `git reset HEAD <file_name> -p`: ask change by change if want to reset the changes or not _(staged changes)_.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git revert`
 
@@ -171,7 +171,7 @@ Create a commit that contains the inverse of all the changes made in the bad com
 
 `git revert <commit_id>`: reverses an specific commit by its **commit_id**. It's not necessary to pass the entire commit_id, but only the beginning (first 5 characters can be enough).
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git show`
 
@@ -179,7 +179,7 @@ Create a commit that contains the inverse of all the changes made in the bad com
 
 `git show --name-only <commit_id>`: show only the commit info and the name of the files included in the commit.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## `git status`
 
@@ -187,7 +187,7 @@ Create a commit that contains the inverse of all the changes made in the bad com
 
 `git status -sb`: show the status in the short format (`-s` flag) and with the branch and tracking infos (`-b` flag).
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 ## More commands
 
@@ -201,6 +201,6 @@ Create a commit that contains the inverse of all the changes made in the bad com
 
 `git rm <file_name>`: delete/remove a file from the repository. Similar to Linux `rm` command.
 
-[Back to start](#useful-git-commands)
+[Back to start](#start)
 
 [Back to home](README.md)
