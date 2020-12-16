@@ -50,3 +50,7 @@ The commands shown in the [course notes](#course-notes) are also included in tha
 ## Contributing
 
 Please, if you have any suggestion, found any mistake or anything else, **feel free to contribute** and send me a Pull Request.
+
+---
+
+Jesus loves you! ✝❤
